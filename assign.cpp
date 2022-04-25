@@ -34,7 +34,7 @@ void printResult(list<int>& _result)
 }
 
 /**
- * @brief 递归得到分配方案
+ * @brief 通过递归得到分配方案
  * 
  * @param _pNum 
  * @return list<int> 
@@ -81,7 +81,7 @@ int main(int argc, char const *argv[])
     }
     if (pNum >= 5){
         result.clear();
-        result = distribution(pNum);  // 人数超过 5 个之后使用递归得到分配方案
+        result = distribution(pNum);  // 人数超过 5 之后使用递归得到分配方案
     }
     printResult(result);
     return 0;
